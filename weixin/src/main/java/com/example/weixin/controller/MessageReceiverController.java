@@ -41,7 +41,7 @@ public String onMessage(@RequestBody String xml) {
 
 	InMessage inMessage = MessageConvertHelper.convert(xml);
 	
-	
+	LOG.debug("转换后的消息对象\n{}\n",inMessage);
 	
 	
 	return"success";
