@@ -22,7 +22,7 @@
 	<!-- org.fkjava能够匹配到相同包里面的全部类的日志记录器 -->
 	<!-- trace是最详细的日志跟踪级别，可以输出完整的日志信息 -->
 	<!-- trace > debug > info > warn > error > off -->
-	<logger name="org.fkjava" level="trace" />
+	<logger name="com.example" level="trace" />
 
 	<root level="error">
 		<appender-ref ref="CONSOLE" />
