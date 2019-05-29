@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fkjava.weixin.domain.InMessage;
+import com.fkjava.weixin.domain.text.TextInMessage;
+import com.fkjava.weixin.service.MessageConvertHelper;
+
 @RestController 
 @RequestMapping("/kemao_2/message/receiver")
 public class MessageReceiverController {
@@ -33,6 +37,13 @@ public String onMessage(@RequestBody String xml) {
 	
 	
 	LOG.trace("收到的消息原文:\n{}\n------------------*,xml");
+	
+
+	InMessage inMessage = MessageConvertHelper.convert(xml);
+	
+	
+	
+	
 	return"success";
 }
 
