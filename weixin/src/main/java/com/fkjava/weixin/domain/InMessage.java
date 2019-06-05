@@ -37,12 +37,12 @@ public abstract class InMessage implements Serializable {
 		this.createTime = createTime;
 	}
 
-	public String getMsqType() {
-		return msqType;
+	public String getMsgType() {
+		return msgType;
 	}
 
-	public void setMsqType(String msqType) {
-		this.msqType = msqType;
+	public void setmsgType(String msgType) {
+		this.msgType = msgType;
 	}
 
 	public Long getMsgId() {
@@ -74,9 +74,9 @@ public abstract class InMessage implements Serializable {
 	@JsonProperty("CreateTime")
 	private long createTime;
 	
-	@XmlElement(name="MsqType")
-	@JsonProperty("MsqType")
-	private String msqType;
+	@XmlElement(name="MsgType")
+	@JsonProperty("MsgType")
+	private String msgType;
 	
 	@XmlElement(name="MsgId")
 	@JsonProperty("MsgId")

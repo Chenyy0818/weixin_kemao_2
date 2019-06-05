@@ -65,7 +65,7 @@ public class MessageReceiverController {
 
 		LOG.debug("转换后的消息对象\n{}\n", inMessage);
 
-		String channel = "kemao_2" + inMessage.getMsqType();
+		String channel = "kemao_2" + inMessage.getMsgType();
 //		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 //		ObjectOutputStream out = new ObjectOutputStream(bos);
 //		out.writeObject(inMessage);
@@ -79,7 +79,7 @@ public class MessageReceiverController {
 //			public InMessage doInRedis(RedisConnection connection) throws DataAccessException {
 //				// TODO Auto-generated method stub
 //				
-//				String channel = "kemao_2" + inMessage.getMsqType();
+//				String channel = "kemao_2" + inMessage.getMsgType();
 //				connection.publish(channel.getBytes(), data);
 //				
 //				return null;

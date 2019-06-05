@@ -4,7 +4,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fkjava.weixin.domain.InMessage;
 
@@ -22,7 +21,7 @@ public class TextInMessage extends InMessage{
 	@Override
 	public String toString() {
 		return "TextInMessage [Content=" + Content + ", getToUserNmae()=" + getToUserNmae() + ", getFromUserName()="
-				+ getFromUserName() + ", getCreateTime()=" + getCreateTime() + ", getMsqType()=" + getMsqType()
+				+ getFromUserName() + ", getCreateTime()=" + getCreateTime() + ", getMsgType()=" + getMsgType()
 				+ ", getMsgId()=" + getMsgId() + "]";
 	}
 

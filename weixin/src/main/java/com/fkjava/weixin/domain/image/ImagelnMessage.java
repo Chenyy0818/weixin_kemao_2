@@ -29,7 +29,7 @@ public class  ImagelnMessage extends InMessage{
 	@Override
 	public String toString() {
 		return "ImagelnMessage [mediaId=" + mediaId + ", getToUserNmae()=" + getToUserNmae() + ", getFromUserName()="
-				+ getFromUserName() + ", getCreateTime()=" + getCreateTime() + ", getMsqType()=" + getMsqType()
+				+ getFromUserName() + ", getCreateTime()=" + getCreateTime() + ", getMsgType()=" + getMsgType()
 				+ ", getMsgId()=" + getMsgId() + "]";
 	}
 
