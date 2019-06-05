@@ -3,4 +3,8 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/kemao_2?useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
       username: kemao_2
       password: 1234
+      redis:
+      host: wedoc.io
+      port: 6379
+      database: 0
 server.port: 8090

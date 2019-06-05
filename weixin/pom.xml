@@ -41,6 +41,13 @@
 			<version>2.3.0.1</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+				<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		
+		
 		<!-- JAXB的实现库 -->
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>
