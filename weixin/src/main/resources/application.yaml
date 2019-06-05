@@ -7,4 +7,7 @@ spring:
       host: wedoc.io
       port: 6379
       database: 0
+
+   redis:
+      host: 120.79.81.10
 server.port: 8090
